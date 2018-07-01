@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="default" namespace="/" extends="struts-default">
+        <action name="Login" class="com.yehowah.action.LoginAction" method="execute">
+            <result name="success">/success.jsp</result>
+            <result name="login">/index.jsp</result>
+        </action>
+
+        <action name="Login1" class="com.yehowah.action.LoginAction" method="login">
+        </action>
+        <action name="Login2" class="com.yehowah.action.LoginAction" method="postString">
+        </action>
+
+        <action name="postFile" class="com.yehowah.action.LoginAction" method="postFile">
+        </action>
+
+        <action name="uploadFile" class="com.yehowah.action.LoginAction" method="uploadFile">
+        </action>
+    </package>
+</struts>
